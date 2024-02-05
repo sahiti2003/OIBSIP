@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 80%;
+            padding: 20px 10%;
+            background: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 25px;
+            color: #031540;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: .3s;
+        }
+
+        .navbar a:hover {
+            color: #00abf0;
+        }
+
+        .heading {
+            color: black;
+        }
+
+        .home-sci i {
+            font-size: 36px; /* Adjust the size as needed */
+            margin-right: 10px; /* Adjust the spacing between icons */
+        }
+        .bx bxl-instagram:hover{
+            transform: scale(1.07);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+        }
+        .home{
+            height:100vh;
+            background:linear-gradient(-90deg, #031540 65%, #fff 35%);
+            display:flex;
+            align-items:center;
+            justify-content: space-between;
+            padding:0 10%;
+        }
+        .home-image{
+            width:300px;
+            height:300px;
+           
+        }
+        .home-content{
+            max-width:1500px;
+            color:#fff;
+            text-align:right;
+        }
+        .home-content h1{
+            font-size:47px;
+            line-height:1.2;
+        }
+        .home-content h3{
+            font-size:30px;
+            color:#00abf0;
+        }
+        .home-content{
+            font-size:16px;
+            margin-top:20px;
+        }
+        .btn{
+            padding:12px 35px;
+            background:#00abf0;
+            border-radius:40px;
+            color:#fff;
+            text-decoration:none;
+            font-weight:600;
+            letter-spacing:1px;
+            box-shadow:0 0 10px #00abf0;
+            transition:.5s;
+        }
+        .imagee{
+            height:450px;
+            width:auto;
+        }
+        section.about{
+            padding: 20px 10%;
+        }
+        .heading2{
+            color:#031540;
+            font-size:30px;
+        }
+        .heading3{
+            color:#00abf0;
+            font-size:20px;
+
+        }
+        .image2{
+            height:10px;
+            width:auto;
+        }
+        .section-heading{
+            color:#031540;
+            font-size:30px;
+            padding:20px 10%;
+            line-height:0.5;
+        }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+.container:hover{
+
+    transform: scale(1.07);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.blah:hover{
+    transform: scale(1.07);
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.headd {
+    font-size: 22px;
+    margin: 0 0 10px;
+    color:#00abf0;
+}
+
+.paraa {
+    font-size: 12px;
+    margin: 0;
+}
+.heloo{
+    padding:20px 8%;
+}
+
+.containerss {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-right: 33%;
+            padding-right: 45px;
+            text-align:center;
+            margin-left: 300px;
+        }
+
+        input[type=email],input[type=password]
+         {
+           
+            border-radius: 6px;
+            padding: 8px 20px;
+            position: relative;
+            left: 13px;
+        }
+        .two{
+           text-align: center;
+           width:100%;
+           padding: 10px 3px;
+           position: relative;
+           left: 13px;
+           background-color: #00abf0;
+           color: white;
+           border:0px;
+           border-radius: 17px;
+           margin-left:17px;
+        }
+
+        .two:hover{
+           opacity: 0.7;
+           cursor: pointer;
+        }
+       
+
+        input[type="email"],
+        input[type="text"] {
+            border: 2px solid black;
+            border-radius: 6px;
+            padding: 15px 20px;
+            position: relative;
+            left: 13px;
+        }
+
+        input[type="email"]:focus::placeholder,
+        input[type="text"]:focus::placeholder {
+            transform: translateY(-13px);
+            transition: transform 0.3s ease-out;
+            opacity: 0.6;
+            font-size: 10px;
+        }
+        .blahb{
+            height:100px;
+            width:350px;
+        }
+        .sahi{
+            text-align: center;
+        }
+        .cform{
+            align-content: center;
+            text-align: center;
+        }
+        .mini{
+            padding:5px 2%;
+            color:#031540;
+        }4 
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Y Sahiti</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-image">
+            <img src="C:\Users\DELL\OneDrive\Documents\sahitii\WhatsApp Image 2024-02-05 at 19.59.03 (1).jpeg"class="home-image">
+        </div>
+        <div class="home-content">
+            <br><br><br>
+            <h1>Hi I&rsquo;m Sahiti Yeddanapudi</h1>
+            <h3>Currently pursuing BTech in CSE</h3>
+            <p>Hi, I'm Y Sahiti, currently a third-year B.Tech student in Computer Science at GITAM University in Vizag.I've honed my skills in programming languages like C, Python, Java, and web development.</p>
+            <br>
+
+            <div class="home-sci">
+                 <a href="https://www.instagram.com/sahiti_2003/" style="color:white;"><i class='bx bxl-instagram'></i></a>
+                 <i class='bx bxl-whatsapp'></i>
+                 <i class='bx bxl-linkedin'></i>
+                 <i class='bx bxl-twitter'></i>
+            </div><br><br>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container2 flex items-center">
+            <div>
+                <h1 class="heading2">About Me</h1>
+                <h3 class="heading3"> Hello I'm Sahiti Yeddanapudi.</h3>
+                <p>Hi, I'm Y Sahiti, currently a third-year B.Tech student in Computer Science at GITAM University in Vizag. I've honed my skills in programming languages like C, Python, Java, and web development through courses at Next Wave. Proudly holding a certificate in Data Science from NPTEL Swayam courses, I'm passionate about extracting insights from data. Right now, I'm gaining hands-on experience through an internship at Oasis Infobytes. Excited about the journey ahead and always eager to learn and grow in the world of technology!</p>
+            </div>
+           
+        </div>
+    </section>
+    <h1 class="section-heading">My Skills</h1>
+    <div class="heloo">
+       
+    <div class="grid-container">
+        <div class="container">
+            <h1 class="headd">C Programming</h1>
+            <p class="paraa">I possess proficiency in the C programming language, demonstrating a strong grasp of its syntax, data structures, and algorithms. My practical experience includes developing efficient and scalable solutions, showcasing a deep understanding of low-level programming principles.</p>
+        </div>
+        <div class="container">
+            <h1 class="headd">Python</h1>
+            <p class="paraa">I am adept in Python programming, proficiently utilizing its concise syntax and extensive libraries. My experience encompasses developing diverse applications, leveraging Python's flexibility for tasks ranging from web development to data analysis, showcasing a versatile skill set in the language.</p>
+        </div>
+        <div class="container">
+            <h1 class="headd">Java</h1>
+            <p class="paraa">I am well-versed in Java, exhibiting a comprehensive understanding of its object-oriented concepts and robust ecosystem. With hands-on experience in Java development, I have successfully crafted scalable applications and leveraged the language's versatility to create robust software solutions.</p>
+        </div>
+        <div class="container">
+            <h1 class="headd">Data Science</h1>
+            <p class="paraa">I specialize in data science, employing a combination of statistical analysis, machine learning, and programming skills to extract meaningful insights from complex datasets. With a solid foundation in data manipulation, visualization, and predictive modeling, I excel in crafting data-driven solutions that contribute to informed decision-making processes.</p>
+        </div>
+        <div class="container">
+            <h1 class="headd">Web Development</h1>
+            <p class="paraa">TI excel in web development, proficiently employing front-end technologies like HTML, CSS, and JavaScript to create visually appealing and responsive user interfaces. Additionally, my expertise extends to back-end technologies such as Node.js and Django, allowing me to build robust and scalable web applications.</p>
+        </div>
+        <div class="container">
+            <h1 class="headd">Sql</h1>
+            <p class="paraa">I possess a strong command of SQL (Structured Query Language), enabling me to design, query, and manage relational databases efficiently. My expertise includes database schema design, optimization, and executing complex queries for data retrieval and manipulation.</p>
+        </div>
+    </div>
+
+
+    <div class="cform" id="contact">
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h1 class="mini">Contact Us</h1>
+            <input type="hidden" name="access_key" value="0140356e-e7ab-49bd-9d5f-a1005b7fb068">
+<div class="containerss">
+            <input type="text" name="text" placeholder="Enter Name" required style="width:350px;"><br><br>
+            <input type="email" name="Email address" placeholder="Enter EmailID" required style="width:350px;"><br><br>
+            <input type="text" name="text" placeholder="Enter your Comments" required class="blahb"><br><br>
+                <button class="two">Submit</button>
+           </form>    
+    </div>
+</div>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+#custom-nav-link1 {
+    color: #323f4b;
+    font-family: "roboto";
+}
+
+#custom-nav-link2 {
+    color: #323f4b;
+    font-family: "roboto";
+}
+
+#custom-nav-link3 {
+    color: #323f4b;
+    font-family: "roboto";
+}
+
+#custom-nav-link4 {
+    color: #323f4b;
+    font-family: "roboto";
+}
+
+.banner-container {
+    height: 100vh;
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+    background-size: cover;
+}
+
+.banner-heading {
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+    font-family: "roboto";
+}
+
+.banner-para {
+    color: #f5f7fa;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: "roboto";
+
+}
+
+.button {
+    width: 130px;
+    height: 40px;
+    color: white;
+    background-color: #d0b200;
+    border-width: 0px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.button-2 {
+    width: 130px;
+    height: 40px;
+    color: #d0b200;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0b200;
+    border-radius: 8px;
+}
+.menu-section {
+    background-color: white;
+}
+
+.section-heading {
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+    color: #183b56;
+}
+
+.image {
+    border-radius: 16px;
+    width: 290px;
+    height: 304px;
+}
+
+.card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.menu-link {
+    color: #d0b200;
+    font-weight: 500;
+    font-family: "roboto";
+    font-size: 14px;
+}
+
+.card-item {
+    border-radius: 16px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.section {
+    background-color: #f9fbfe;
+}
+
+.wcu-heading {
+    font-family: "roboto";
+    font-size: 28px;
+    font-weight: 700;
+    color: #183b56;
+}
+
+.wcu-para {
+    font-size: 16px;
+    font-family: "roboto";
+    color: #5a7184;
+}
+
+.wcu-card {
+    background-color: white;
+    text-align: center;
+    border-style: solid;
+    border-radius: 16px;
+    border-width: 1px;
+    border-color: #e5eaf4;
+}
+
+.card-image {
+    height: 90px;
+    width: 87px;
+}
+
+.card-title {
+    font-family: "roboto";
+    font-size: 22px;
+    font-weight: 500;
+    color: #323f4b;
+}
+
+.card-para {
+    font-family: "roboto";
+    font-size: 16px;
+    color: #7b8794;
+}
+
+.app-logo{
+    display:flex;
+    margin-left: 40%;
+}
+
+
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact .app-logo {
+    display: flex;    
+    align-items: center;
+}
+
+.contact .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.contact .social-icon {
+    margin: 0 10px;
+}
+
+.contact .social-icon img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 8px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+}
+
+.contact .social-icon img:hover {
+    transform: scale(1.2);
+}
+.contact h3 {
+    font-size: 1.2em;
+    color: #3498db;
+    margin-top: 10px;
+}
+
+.contact p {
+    font-size: 1em;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+
+
+.content{
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.contenthome {
+  padding: 0 18px;
+  display: block;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-img.png" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" id="custom-nav-link1" href="#">Why choose us <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" id="custom-nav-link2" href="#">Explore menu</a>
+                    <a class="nav-link" id="custom-nav-link3" href="#">Delivery and payments</a>
+                    <a class="nav-link" id="custom-nav-link4" href="#">Follow us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-container d-flex flex-column justify-content-center">
+        <div class="text-center">
+            <h1 class="banner-heading mb-3">
+                Get delicious food anytime
+            </h1>
+            <p class="banner-para mb-4">
+                Eat smart and healthy
+            </p>
+            <button class="button">
+                view menu
+            </button>
+            <button class="button-2">
+                Order now
+            </button>
+        </div>
+    </div>
+
+    <div class="menu-section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="section-heading">
+                        Explore Menu
+                    </h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow card-item p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png" class="image w-100" />
+                        <h1 class="card-title">Non-Veg Starters</h1>
+                        <a href="" class="menu-link">View all
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d0b200" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow card-item p-3 mb-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0T5Y4SUToeJ5fp3gK3ZtzcQKsUvXtqrHRjQ&usqp=CAU" class="image w-100" />
+                        <h1 class="card-title">Veg Starters</h1>
+                        <a href="" class="menu-link">View all
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d0b200" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow card-item p-3 mb-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy4xpi3g0DKSln6fPNnwWCwIBC5jRHSF94Rg&usqp=CAU" class="image w-100" />
+                        <h1 class="card-title">Thali</h1>
+                        <a href="" class="menu-link">View all
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d0b200" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="shadow card-item p-3 mb-3">
+                        <img src="https://ministryofcurry.com/wp-content/uploads/2019/11/aloo-chaat-1-1-850x1275.jpg" class="image w-100" />
+                        <h1 class="card-title">Chats</h1>
+                        <a href="" class="menu-link">View all
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#d0b200" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="wcu-heading">
+                        Why Choose Us
+                    </h1>
+                    <p class="wcu-para">
+                        We use original recipies and classic versions of the famous food items
+                    </p>
+                </div>
+                <div class="col-12 mb-3 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-serve.png" />
+                        <h1 class="card-title mt-3">
+                            Food Services
+                        </h1>
+                        <p class="card-para">
+                            Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you the nothing less than perfect.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 mb-3 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/fruits-img.png" />
+                        <h1 class="card-title mt-3">
+                            Food Services
+                        </h1>
+                        <p class="card-para">
+                            The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 mb-3 col-md-4">
+                    <div class="wcu-card p-3 mb-3">
+                        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/offers-img.png" />
+                        <h1 class="card-title mt-3">
+                            Food Services
+                        </h1>
+                        <p class="card-para">
+                            The Fresh Food group provides fresh-cut fruits and vegetables directly picked from our partner farms and farm houses so that you always get them tree to plate.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="contact">
+            <h2> Follow:</h2>
+            <div class="app-logo">
+          <div class="social-icon whatsapp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png" alt="whastapp">
+          </div>
+          <div class="social-icon instagram">
+            <img src="https://img.freepik.com/premium-vector/round-instagram-logo-isolated-white-background_469489-898.jpg" alt="Instagram">
+          </div>
+          <div class="social-icon x">
+            <img src="https://img.freepik.com/free-vector/twitter-new-2023-x-logo-white-background-vector_1017-45422.jpg?w=2000" alt="x">
+          </div>
+          <div class="social-icon facebook">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Facebook">
+          </div>
+          </div>
+          <h3>Location:</h3>
+          <p>D. 83-23/3, Sector 5, MVP Colony, Vizag.</p>
+        </div>
+    </div>
+</body>
+
+</html>
